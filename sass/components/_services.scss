@@ -3,15 +3,12 @@
   margin-bottom: 50px;
   text-align: center;
 }
-
 .services-list {
   display: flex;
 }
-
 .services-list-item {
   margin-right: 30px;
-}
-
-.services-list-item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }

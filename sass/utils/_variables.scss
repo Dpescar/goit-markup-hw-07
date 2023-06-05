@@ -1,55 +1,41 @@
-:root {
-  /*-- VARIABLES --*/
-  /* COLOR SETTINGS */
-  --color-primary-background: #ffffff; /* pirmary-background */
-  --color-primary-brand: #2196f3; /* primary-brand, logo-accent */
-  --color-primary-brand-focus: #2196f3; /* primary-brand-focus */
-  --primary-white-color: #ffffff; /* primary-white-focus */
-  --color-dark: #000000; /* dark */
-  --color-success: #31d0aa; /* success */
-  --color-body-text: #212121; /* body-text */
-  --color-helper-text: #8e8f99; /* helper-text */
-  --color-accent: #e7e9fc; /* accent-color */
-  --color-dark-mode-background: #2f303a; /* dark-mode-background */
-  --color-light-mode-background: #f5f4fa; /* light-mode-background */
+&:root {
+  --color-primary-background: #ffffff;
+  --color-primary-brand: #2196f3;
+  --color-primary-brand-focus: #2196f3;
+  --primary-white-color: #ffffff;
+  --color-dark: #000000;
+  --color-success: #31d0aa;
+  --color-body-text: #212121;
+  --color-helper-text: #8e8f99;
+  --color-accent: #e7e9fc;
+  --color-dark-mode-background: #2f303a;
+  --color-light-mode-background: #f5f4fa;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* FONT SETTINGS */
-  --font-logo: "Raleway", sans-serif; /* logo */
-  --font-primary: "Roboto", sans-serif; /* primary */
-
-  /* FONT WEIGHT */
-  --font-weight-logo: 700; /* logo */
-  --font-weight-regular: 400; /* regular */
-  --font-weight-bold: 500; /* bold */
-
-  /* FONT SIZES */
-  --font-size-logo: 26px; /* logo */
-  --font-size-body: 16px; /* body */
-  --font-size-h1: 44px; /* h1, hero, title */
-  --font-size-h2: 36px; /* h2 */
-  --font-size-h3: 14px; /* h3 */
-  --font-size-small: 12px; /* small */
-  --font-size-bold: 16px; /* bold */
-  --font-size-button: 16px; /* button */
-  --font-size-link: 16px; /* link */
-
-  /* LINE HEIGHT */
-  --line-height-logo: 1.19; /* logo */
-  --line-height-h1: 1.36; /* h1, hero, title */
-  --line-height-h2: 0.67; /* h2 */
-  --line-height-h3: 1.2; /* h3 */
-  --line-height-small: 1.33; /* small */
-  --line-height-bold: 1.5; /* bold */
-  --line-height-button: 1.87; /* button */
-  --line-height-link: 1.5; /* link */
-
-  /* LETTER SPACING */
-  --letter-spacing-logo: 0.03em; /* logo */
-  --letter-spacing-primary: 0.02em; /* body */
-  --letter-spacing-secondary: 0.06em; /* button, smaller text */
-
-  /* BOX-SHADOW */
+  --font-logo: "Raleway", sans-serif;
+  --font-primary: "Roboto", sans-serif;
+  --font-weight-logo: 700;
+  --font-weight-regular: 400;
+  --font-weight-bold: 500;
+  --font-size-logo: 26px;
+  --font-size-body: 16px;
+  --font-size-h1: 44px;
+  --font-size-h2: 36px;
+  --font-size-h3: 14px;
+  --font-size-small: 12px;
+  --font-size-bold: 16px;
+  --font-size-button: 16px;
+  --font-size-link: 16px;
+  --line-height-logo: 1.19;
+  --line-height-h1: 1.36;
+  --line-height-h2: 0.67;
+  --line-height-h3: 1.2;
+  --line-height-small: 1.33;
+  --line-height-bold: 1.5;
+  --line-height-button: 1.87;
+  --line-height-link: 1.5;
+  --letter-spacing-logo: 0.03em;
+  --letter-spacing-primary: 0.02em;
+  --letter-spacing-secondary: 0.06em;
   --box-shadow1: 0px 2px 1px 0px #00000033;
   --box-shadow2: 0px 1px 1px 0px #00000024;
   --box-shadow3: 0px 1px 3px 0px #0000001f;

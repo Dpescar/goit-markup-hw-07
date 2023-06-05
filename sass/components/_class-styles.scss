@@ -1,4 +1,7 @@
 /* HIDDEN */
+/* LIST */
+/*-- B7, B8 CONTENT CENTER */
+/*-- B15 SECTION PADDING */
 .visually-hidden {
   border: 0;
   clip-path: inset(100%);
@@ -11,19 +14,20 @@
   white-space: nowrap;
   width: 1px;
 }
-
-/* LIST */
 .list {
   list-style: none;
 }
-
-.link:hover,
-.link:focus,
-.link:active {
-  color: var(--color-primary-brand);
+.link {
+  &:hover {
+    color: var(--color-primary-brand);
+  }
+  &:focus {
+    color: var(--color-primary-brand);
+  }
+  &:active {
+    color: var(--color-primary-brand);
+  }
 }
-
-/*-- B7, B8 CONTENT CENTER */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -32,13 +36,10 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
-/*-- B15 SECTION PADDING */
 .section-bottom {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .section-top {
   padding-top: 94px;
 }

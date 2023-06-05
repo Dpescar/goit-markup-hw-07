@@ -90,7 +90,6 @@
   width: 30px;
   height: 30px;
 } */
-
 /* MODAL */
 .modal {
   position: absolute;
@@ -103,7 +102,6 @@
   background-color: #fff;
   box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
 }
-
 .modal-close {
   display: block;
   position: absolute;
@@ -116,19 +114,16 @@
   border: 1px solid #e6e6e6;
   border-radius: 50%;
 }
-
 .close-icon {
   width: 11px;
   height: 11px;
 }
-
 .js-subscribe {
   display: flex;
   position: relative;
   flex-direction: column;
   margin-left: 93px;
 }
-
 .subscribe-subtitle {
   display: block;
   font-weight: 700;
@@ -137,7 +132,6 @@
   color: #fff;
   margin-bottom: 20px;
 }
-
 .subscribe-button {
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
@@ -153,13 +147,13 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #188ce8;
+  }
+  &:focus {
+    background-color: #188ce8;
+  }
 }
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: #188ce8;
-}
-
 .subskribe-icon {
   width: 24px;
   height: 24px;
@@ -167,7 +161,6 @@
   vertical-align: middle;
   fill: #fff;
 }
-
 .subscribe-input {
   width: 358px;
   height: 50px;
@@ -178,21 +171,18 @@
   background-color: #2f303a;
   caret-color: #fff;
   color: #fff;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #ffffff99;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
 }
-
-.subscribe-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: #ffffff99;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
 .data-form {
   padding: 40px;
 }
-
 .form-subtitle {
   font-weight: 700;
   font-size: 20px;
@@ -201,7 +191,6 @@
   margin-bottom: 12px;
   color: #212121;
 }
-
 .data-form-button {
   display: block;
   min-width: 200px;
@@ -219,14 +208,15 @@
   transition-property: background-color, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--color-primary-brand-focus);
+    border-radius: 4px;
+  }
+  &:focus {
+    background-color: var(--color-primary-brand-focus);
+    border-radius: 4px;
+  }
 }
-
-.data-form-button:hover,
-.data-form-button:focus {
-  background-color: var(--color-primary-brand-focus);
-  border-radius: 4px;
-}
-
 .data-form-input {
   display: block;
   width: 100%;
@@ -239,38 +229,35 @@
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--color-primary-brand-focus);
+    + {
+      .input-icon {
+        fill: #bababa;
+      }
+    }
+  }
+  &:hover {
+    border-color: var(--color-primary-brand-focus);
+  }
 }
-
-.data-form-input:focus,
-.data-form-input:hover {
-  border-color: var(--color-primary-brand-focus);
-}
-
-.data-form-input:focus + .input-icon {
-  fill: #bababa;
-}
-
 .comment {
   width: 100%;
   height: 120px;
   padding-left: 16px;
   margin-top: 4px;
   resize: none;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: var(--comment-placeholder);
+  }
 }
-
-.comment::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-  color: var(--comment-placeholder);
-}
-
 .agree-newsletter {
   display: block;
-
   margin-bottom: 30px;
-
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -278,11 +265,9 @@
   text-align: center;
   color: #757575;
 }
-
 .agree-newsletter-text {
   display: inline;
 }
-
 .agreement-conditions {
   font-style: normal;
   font-weight: normal;
@@ -291,10 +276,8 @@
   text-decoration: underline;
   color: var(--color-primary-brand-focus);
 }
-
 .inscription {
   display: block;
-
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.166;
@@ -304,13 +287,11 @@
 .inscription-textarea {
   margin-bottom: 32px;
 }
-
 .input-wrap {
   display: block;
   position: relative;
   margin-top: 4px;
 }
-
 .person-form-icon {
   position: absolute;
   transform: translateY(-50%);
@@ -319,29 +300,29 @@
   width: 18px;
   height: 18px;
 }
-
 .checkbox {
   appearance: none;
   position: absolute;
+  &:checked {
+    + {
+      .checkbox-icon {
+        background-size: contain;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--color-primary-brand);
+        border-color: var(--color-primary-brand);
+      }
+    }
+  }
 }
-
 .checkbox-icon {
   display: inline-block;
   border: 2px solid var(--color-body-text);
   border-radius: 2px;
   vertical-align: sub;
 }
-
 .check-mark {
   display: block;
   width: 16px;
   height: 15px;
-}
-
-.checkbox:checked + .checkbox-icon {
-  background-size: contain;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--color-primary-brand);
-  border-color: var(--color-primary-brand);
 }

@@ -2,16 +2,13 @@
 .advantages-list {
   display: flex;
 }
-
 .advantages-list-item {
   margin-right: 30px;
   flex-basis: calc((100% - 75px) / 4);
+  &:last-child {
+    margin-right: 0px;
+  }
 }
-
-.advantages-list-item:last-child {
-  margin-right: 0px;
-}
-
 .h1 {
   color: var(--color-primary-background);
   font-size: var(--font-size-h1);
@@ -19,12 +16,10 @@
   font-weight: 900;
   letter-spacing: var(--letter-spacing-secondary);
 }
-
 .h2 {
   font-size: var(--font-size-h2);
   font-weight: 700px;
 }
-
 .h3 {
   font-size: var(--font-size-h3);
   font-weight: 700px;
