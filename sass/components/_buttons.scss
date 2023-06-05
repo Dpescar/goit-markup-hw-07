@@ -1,101 +1,138 @@
-.button {
-  border-radius: 25px;
-  color: #ffffff;
+a,
+b,
+button,
+br,
+img,
+span {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.subscribe-button {
   cursor: pointer;
-  font-family: "Open Sans";
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  line-height: 16px;
-  padding: 12px 38px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 160px;
 }
 
-.button--about-section {
-  margin-top: 40px;
-}
-
-.button--book-a-service {
-  background-color: transparent;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  color: #ffffff;
-  padding: 12px 24px;
-  transition: background-color var(--transition), color var(--transition);
-
-  &:focus,
-  &:hover {
-    background-color: #ff6c00;
-  }
-}
-
-.button--from-prices {
-  margin-top: 50px;
-}
-
-.button--from-modal {
-  background: $accent-color;
-  border: 1px solid darken($accent-color, 5%);
+.subscribe-button {
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-brand);
   color: #fff;
-  padding: 12px 38px;
-
-  &:focus,
-  &:hover {
-    background: darken($accent-color, 5%);
-    border: 1px solid darken($accent-color, 10%);
-  }
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--color-primary-brand-focus);
+}
+.portfolio-buttons {
+  display: flex;
+  margin: 0px 0px 50px 0px;
+  justify-content: center;
+}
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
+  background-color: var(--color-primary-brand-focus);
+  border: 1px solid var(--color-primary-brand-focus);
+  transition: color 250ms var(--cubic-bezier);
+}
+.btn {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-weight: var(--font-weight-bold);
+  height: 38px;
+  justify-content: center;
+  letter-spacing: var(--letter-spacing-secondary);
+  line-height: var(--line-height-button);
+  padding: 6px 22px;
+  top: 0px;
 }
 
-.button--transparent {
-  background: transparent;
-  border: 1px solid #ff6c00;
-
-  &:hover,
-  &:focus {
-    background: $accent-color;
-  }
+.portfolio-btn {
+  background-color: var(--color-light-mode-background);
+  border: 1px solid var(--color-light-mode-background);
+  color: var(--color-body-text);
+  width: auto;
+  margin-right: 8px;
 }
 
-.button--close {
-  background: transparent;
-  border: none;
-  color: var(--text-alternate-color);
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  opacity: 0.3;
-  right: 16px;
-  top: 16px;
-  font-size: 32px;
-  transition: opacity var(--transition);
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
+.decor-btn,
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--color-primary-brand);
+  border: 1px solid var(--color-primary-brand);
+  color: var(--color-primary-brand);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--color-primary-background);
 }
 
-.button--toggle-menu {
-  position: absolute;
-  right: 30px;
-  padding: 0;
-  width: 24px;
+.decor-btn:hover,
+.decor-btn:focus {
+  background-color: var(--color-primary-brand);
+  border: 1px solid var(--color-primary-brand);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.button--close-menu {
-  align-self: flex-end;
-  display: none;
-  color: #303030;
-  padding: 0;
-  width: 24px;
-  font-size: 24px;
-  line-height: 24px;
+.decor-btn:active,
+.portfolio-btn:active {
+  background: var(--color-primary-brand-focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subscribe-button {
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-brand);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: $mobile-breakpoint) {
-  .button--transparent {
-    margin-left: 40px;
-  }
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #188ce8;
+}
+.data-form-button {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 55px 10px 56px;
+  margin: auto;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background-color: var(--color-primary-brand);
+  color: var(--primary-white-color);
+  box-shadow: var(--box-shadow1), var(--box-shadow2), var(--box-shadow3);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.data-form-button:hover,
+.data-form-button:focus {
+  background-color: var(--color-primary-brand-focus);
+  border-radius: 4px;
 }
