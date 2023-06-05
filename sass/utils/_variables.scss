@@ -1,45 +1,56 @@
-$dark-text: #303030;
-$white-text: #fff;
-$accent-color: #ff6c00;
-
-/* Responsive Breakpoints */
-$mobile-breakpoint: 480px;
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1200px;
-
 :root {
-  --accent-color: #{$accent-color};
-  --text-active: #{$accent-color};
+  /*-- VARIABLES --*/
+  /* COLOR SETTINGS */
+  --color-primary-background: #ffffff; /* pirmary-background */
+  --color-primary-brand: #2196f3; /* primary-brand, logo-accent */
+  --color-primary-brand-focus: #2196f3; /* primary-brand-focus */
+  --primary-white-color: #ffffff; /* primary-white-focus */
+  --color-dark: #000000; /* dark */
+  --color-success: #31d0aa; /* success */
+  --color-body-text: #212121; /* body-text */
+  --color-helper-text: #8e8f99; /* helper-text */
+  --color-accent: #e7e9fc; /* accent-color */
+  --color-dark-mode-background: #2f303a; /* dark-mode-background */
+  --color-light-mode-background: #f5f4fa; /* light-mode-background */
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Links */
-  --link-color: #{$white-text};
-  --link-color--hover: #f0883e;
-  --link-color--active: #{$accent-color};
-  --link-dark-text-color: #{$dark-text};
-  --link-dark-text-color--hover: #{$accent-color};
+  /* FONT SETTINGS */
+  --font-logo: "Raleway", sans-serif; /* logo */
+  --font-primary: "Roboto", sans-serif; /* primary */
 
-  --link-from-aside-color: #{$dark-text};
-  --link-from-aside-color--hover: #{$accent-color};
-  --link-address-color: #9da4bd;
-  --link-address-color--hover: #{$white-text};
-  --link-footer-color: #{$dark-text};
-  --link-footer-color--hover: #f0883e;
-  --link-header-mobile: #{$dark-text};
+  /* FONT WEIGHT */
+  --font-weight-logo: 700; /* logo */
+  --font-weight-regular: 400; /* regular */
+  --font-weight-bold: 500; /* bold */
 
-  --from-aside-icon-color: #{$dark-text};
-  --from-aside-icon--hover-color: #{$accent-color};
-  --text-font-family: "Open Sans", sans-serif;
-  --heading-font-family: "Raleway", sans-serif;
-  --text-color: #9da4bd;
-  --text-alternate-color: #{$dark-text};
-  --form-color: #{$dark-text};
-  --form-color--focused: #{$accent-color};
-  --form-color--light: rgba(157, 164, 189, 0.4);
-  --form-color--focused--light: #{$white-text};
-  --heading-color: #{$white-text};
-  --heading-alternate-color: #{$dark-text};
-  --sub-heading-color: #9da4bd99;
+  /* FONT SIZES */
+  --font-size-logo: 26px; /* logo */
+  --font-size-body: 16px; /* body */
+  --font-size-h1: 44px; /* h1, hero, title */
+  --font-size-h2: 36px; /* h2 */
+  --font-size-h3: 14px; /* h3 */
+  --font-size-small: 12px; /* small */
+  --font-size-bold: 16px; /* bold */
+  --font-size-button: 16px; /* button */
+  --font-size-link: 16px; /* link */
 
-  --modal-bg: #fff;
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* LINE HEIGHT */
+  --line-height-logo: 1.19; /* logo */
+  --line-height-h1: 1.36; /* h1, hero, title */
+  --line-height-h2: 0.67; /* h2 */
+  --line-height-h3: 1.2; /* h3 */
+  --line-height-small: 1.33; /* small */
+  --line-height-bold: 1.5; /* bold */
+  --line-height-button: 1.87; /* button */
+  --line-height-link: 1.5; /* link */
+
+  /* LETTER SPACING */
+  --letter-spacing-logo: 0.03em; /* logo */
+  --letter-spacing-primary: 0.02em; /* body */
+  --letter-spacing-secondary: 0.06em; /* button, smaller text */
+
+  /* BOX-SHADOW */
+  --box-shadow1: 0px 2px 1px 0px #00000033;
+  --box-shadow2: 0px 1px 1px 0px #00000024;
+  --box-shadow3: 0px 1px 3px 0px #0000001f;
 }

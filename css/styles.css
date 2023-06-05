@@ -420,7 +420,7 @@ body {
   color: #757575;
 }
 
-/*  */
+/*SOCIAL LINKS*/
 .social-link-list {
   display: flex;
   padding: 0;
@@ -583,7 +583,7 @@ footer b {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Homework 6 */
+/* SUBSCRIBE */
 
 .subscribe-button {
   cursor: pointer;
